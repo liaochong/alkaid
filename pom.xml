@@ -17,6 +17,7 @@
     <modules>
         <module>alkaid-provider</module>
         <module>alkaid-customer</module>
+        <module>alkaid-common</module>
     </modules>
 
     <name>alkaid</name>
@@ -27,6 +28,16 @@
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
     </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>com.github.liaochong</groupId>
+                <artifactId>alkaid-common</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
 
     <dependencies>
         <dependency>
